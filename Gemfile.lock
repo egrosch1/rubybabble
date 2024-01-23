@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    spellchecker (0.1.5)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  spellchecker
+
+BUNDLED WITH
+   2.2.3
