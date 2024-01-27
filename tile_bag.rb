@@ -46,10 +46,11 @@ class TileBag
   		tile_index = rand(@tiles.length)
   		@tiles.delete_at(tile_index)
 	end
-	 def empty?
+
+	def empty?
    	 	# Check if the bag is empty
-    		@tiles.empty?
-  	end
+  		@tiles.empty?
+  end
 
   	def self.points_for(tile)
     		# Class method to get points for a given tile
