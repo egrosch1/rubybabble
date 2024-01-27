@@ -6,41 +6,41 @@ class TileBag
     	:O => 1, :P => 3, :Q => 10, :R => 1, :S => 1, :T => 1, :U => 1,
     	:V => 4, :W => 4, :X => 8, :Y => 4, :Z => 10
   }
-  
-  
+
+
    TILES = [
-    :E, :E,
-    :A, :A, :A, :A, :A, :A, :A, :A, :A,
-    :I, :I, :I, :I, :I, :I, :I, :I, :I,
-    :O, :O, :O, :O, :O, :O, :O, :O,
-    :N, :N, :N, :N, :N, :N,
-    :R, :R, :R, :R, :R, :R,
-    :T, :T, :T, :T, :T, :T,
-    :L, :L, :L, :L,
-    :S, :S, :S, :S,
-    :U, :U, :U, :U,
-    :D, :D, :D, :D,
-    :G, :G, :G,
-    :B, :B,
-    :C, :C,
-    :M, :M,
-    :P, :P,
-    :F, :F,
-    :H, :H,
-    :V, :V,
-    :W, :W,
-    :Y, :Y,
-    :K,
-    :J,
-    :X,
-    :Q,
-    :Z
+    :E, :E, :E, :E, :E, :E, :E, :E, :E, :E, :E, :E,    # 12 Es
+    :A, :A, :A, :A, :A, :A, :A, :A, :A,								# 9 As
+    :I, :I, :I, :I, :I, :I, :I, :I, :I,								# 9 Is
+    :O, :O, :O, :O, :O, :O, :O, :O,                  # 8 Os
+    :N, :N, :N, :N, :N, :N,                          # 6 Ns
+    :R, :R, :R, :R, :R, :R,                          # 6 Rs
+    :T, :T, :T, :T, :T, :T,                          # 6 Ts
+    :L, :L, :L, :L,                                 # 4 Ls
+    :S, :S, :S, :S,                                 # 4 Ss
+    :U, :U, :U, :U,                                 # 4 Ls
+    :D, :D, :D, :D,                                 # 4 Ds
+    :G, :G, :G,                                     # 3 Gs
+    :B, :B,                                         # 2 Bs
+    :C, :C,                                         # 2 Cs
+    :M, :M,                                         # 2 Ms
+    :P, :P,                                         # 2 Ps
+    :F, :F,                                         # 2 Fs
+    :H, :H,                                         # 2 Hs
+    :V, :V,                                         # 2 Vs
+    :W, :W,                                         # 2 Ws
+    :Y, :Y,                                         # 2 Ys
+    :K,                                            # 1 K
+    :J,                                            # 1 J
+    :X,                                            # 1 X
+    :Q,                                            # 1
+    :Z                                              # 1 Z
     ]
 	def initialize
 		# Array to store tiles
 		@tiles = TILES.dup
 	end
-	
+
 	def drawTile
  		# Remove and return a random tile from the bag
   		tile_index = rand(@tiles.length)
